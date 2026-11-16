@@ -1,0 +1,11 @@
+{
+	"appId": "com.salah.mosquedisplay",
+	"appName": "Salah",
+	"webDir": "www",
+	"android": {
+		"allowMixedContent": false
+	},
+	"server": {
+		"androidScheme": "https"
+	}
+}
