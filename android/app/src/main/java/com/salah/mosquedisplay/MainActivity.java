@@ -25,6 +25,9 @@ public class MainActivity extends BridgeActivity {
         WebSettings settings = getBridge().getWebView().getSettings();
         settings.setMediaPlaybackRequiresUserGesture(false);
 
+        // Lets the page send prayer times to the home-screen widget
+        getBridge().getWebView().addJavascriptInterface(new SalahWidgetBridge(this), "SalahWidget");
+
         enterImmersiveMode();
     }
 
